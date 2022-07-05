@@ -1,0 +1,13 @@
+package com.example.musicplayer.models.topsongs.imid
+
+import android.os.Parcelable
+import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
+data class Id(
+    @SerializedName("label")
+    val label: String?,
+    @SerializedName("attributes")
+    val attributes: IdAttributes?,
+) : Parcelable
